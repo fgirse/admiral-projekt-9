@@ -60,7 +60,7 @@ export default function Home() {
       <StyledHeroHome>
 
 
-        <Heading3>Dein Treffpunkt<br /> in Freiburg</Heading3>
+        
 
       </StyledHeroHome>
 
