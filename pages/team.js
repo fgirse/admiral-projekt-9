@@ -35,7 +35,7 @@ const team = () => {
       <p className="mt-4 text-1xl text-gray-300 leading-relaxed">Volker Schneider und Michael Schreck haben 2017 die Idee und das Konzept des Rettungsankers initiert und liessen den Kahn in September 2017 vom Stapel laufen. Seit Januar 2020 zeigt sich Michael nun in alleiniger Verantwortung für den Rettungsanker und steurt das Schiff in diesen unruhigen Zeiten verantwortungsvoll durch die hohen Wogen </p>
     </div>
     <div className="md:w-1/3 xl:p-36 md:border-l">
-    <Image className="w-1/3 mx-auto mb-4 rounded-full" src="/offizierin.png" layout="responsive" width="100" height="120" alt="Portrait"/>
+    <Image className="w-1/3 mx-auto mb-4 rounded-full" src="../public/Offizierin.png" layout="responsive" width="100" height="120" alt="Portrait"/>
     <h3 className="mt-3 text-5xl text-yellow-600 mb-2 font-bold font-heading">Anne</h3>
       <span className="text-2xl font-bold ">I. Offizierin</span>
       <p className="mt-4 text-1xl xl:text-1xl text-gray-300 leading-relaxed">Auch Anne ist Teammitglied derersten Stunde nach Stapelablauf des Rettungsanker-Mit Ihrer langjährigen Gastroerfahrung  ist sie ein wichtiger Pfeiler im Team des Rettungsankers</p>

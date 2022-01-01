@@ -36,11 +36,6 @@ import {
 } from "theme-ui";
 
 
-export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog')
-
-  return { props: { posts } }
-}
 
 
 
@@ -293,9 +288,16 @@ export default function Home() {
 
 
       </section>
+      
     </>
 
 
 
   )
+  export async function getStaticProps() {
+    const posts = await getAllFilesFrontMatter('blog')
+  
+    return { props: { posts } }
+  }
+  
 }

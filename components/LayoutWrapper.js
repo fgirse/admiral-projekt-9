@@ -18,7 +18,7 @@ const LayoutWrapper = ({ children }) => {
               <div className="flex items-center justify-between">
                 <div className="mr-3 flex flex-row justify around gap-10 items-center">
                   <LogoNeu />
-                  <Phoneillustra />
+                  <Phoneillustra width="4vw" height="4vh" />
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
                   <div className="hidden h-6 text-sm text-gray-400 font-semibold sm:block">

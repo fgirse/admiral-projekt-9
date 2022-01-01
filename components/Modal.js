@@ -42,14 +42,14 @@ export default function Modal() {
                 </div>
                 {/*body*/}
                 <div className="relative w-11/12 p-6 flex-auto">
-                  <div className="w-96 h-60 bg-green-400 my-4 text-blueGray-500 text-3xl leading-relaxed sm:text-md">
+                  <div className="w-11/12 h-60 bg-green-400 my-4 text-blueGray-500 text-3xl leading-relaxed sm:text-md">
                    <SimpleMap className="w-11/12"></SimpleMap>
                   </div>
                 </div>
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
                   <button
-                    className="text-gray-800 rounded-2xl border-2 border-gray-800 font-bold hover:text-yellow-400 hover:background-red-700 hover:bg-gray-700 font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="w-48 bg-red-800 text-gray-100 rounded-2xl border-2 border-gray-800 font-bold hover:text-yellow-400 hover:background-red-700 hover:bg-gray-700 font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
@@ -61,7 +61,7 @@ export default function Modal() {
               </div>
             </div>
           </div>
-          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+          <div className="opacity-25 fixed inset-0 z-40 bg-red"></div>
         </>
       ) : null}
     </>
