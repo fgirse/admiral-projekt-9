@@ -38,11 +38,7 @@ import {
 
 
 
- export async function getStaticProps() {
-   const posts = await getAllFilesFrontMatter('blog')
 
-  return { props: { posts } }
-}
 
 const theme = {
   ...sketchy,
@@ -57,10 +53,10 @@ export default function Home() {
   return (
     <>
       
-      <Heading3>Dein Treffpunkt<br/> in Freiburg</Heading3>
           <StyledHeroHome>
   
                 
+      <Heading3>Dein Treffpunkt<br/> in Freiburg</Heading3>
   
           </StyledHeroHome> 
 
