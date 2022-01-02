@@ -51,10 +51,10 @@ const theme = {
 export default function Home() {
   return (
     <>
+       <Heading3>Dein Treffpunkt<br/>in Freiburg !!!</Heading3>
 
       <StyledHeroHome>
-
-
+         
         
 
       </StyledHeroHome>
