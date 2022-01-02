@@ -22,7 +22,7 @@ const Kontact = () => {
                        <p className='text-gray-300 text-4xl bg-transparent'>Linie 1 - 3 und 5</p>
                     </div>
 
-                    <div className="mt-12">
+                    <div className="border-5 border-white">
                         <Modal></Modal>
                     </div>
             </div>

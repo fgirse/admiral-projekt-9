@@ -1,18 +1,13 @@
 /* eslint-disable prettier/prettier */
-import Link from '@/components/Link'
-import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
-import LogoNeu from '../components/icons/svg/SvgLogoNeu'
-import Flensburger from '../components/icons/svg/SVGFlensburger'
-import Ganter from '../components/icons/svg/SVGGanter'
-import Astra from '../components/icons/svg/SVGAstra'
-import formatDate from '@/lib/utils/formatDate'
-import StyledHeroHome from '../components/HeroHome.js'
-import { Heading3 } from '../components/Headings/Heading3.styles'
-import { Heading1 } from '@/components/Headings/Heading1.styles'
-import Image from 'next/image'
-import sketchy from "theme-ui-sketchy-preset"
+import { getAllFilesFrontMatter } from '@/lib/mdx';
+import Flensburger from '../components/icons/svg/SVGFlensburger';
+import Ganter from '../components/icons/svg/SVGGanter';
+import Astra from '../components/icons/svg/SVGAstra';
+import StyledHeroHome from '../components/HeroHome';
+import { Heading3 } from '../components/Headings/Heading3.styles';
+import { Heading1 } from '@/components/Headings/Heading1.styles';
+import Image from 'next/image';
+import sketchy from "theme-ui-sketchy-preset";
 
 import {
   jsx,
@@ -88,10 +83,10 @@ export default function Home() {
         <Image className='absolute' src="/Astraballons.png" alt="portrait" layout="responsive" height={473} width={473} />
       </div>
       <Heading1 className=''>Die Kneipe</Heading1>
-      <div className='w-2/12 absolute left-60 z-20 -transform -translate-y-36' >
+      <div className='w-2/12 absolute left-80 z-20 -transform -translate-y-16' >
         <Image src="/rettungsring.png" alt="portrait" layout="responsive" height={473} width={473} />
       </div>
-      <div className='absolute w-2/12 z-4 transform -translate-y-52' >
+      <div className='absolute w-2/12 z-4 transform -translate-y-2' >
         <Image src="/lighthousebw.svg" alt="portrait" layout="responsive" height={473} width={473} />
       </div>
 
