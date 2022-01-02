@@ -18,10 +18,10 @@ const LayoutWrapper = ({ children }) => {
               <div className="flex items-center justify-between">
                 <div className="mr-3 flex flex-row justify around gap-10 items-center">
                   <LogoNeu />
-                  <Phoneillustra width="4vw" height="4vh" />
+                  <Phoneillustra />
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="hidden h-6 text-sm text-gray-400 font-semibold sm:block">
+                  <div className="hidden h-6 text-sm font-mono text-gray-300 font-semibold sm:block md:text-lg">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (
@@ -36,7 +36,7 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-bold font-sans text-gray-200 hover:text-yellow-400 hover:border-b hover: border-yellow-400 sm:p-4  lg:text-2xl dark:text-gray-100"
+                  className="text-xs p-1 font-bold font-sans text-gray-200 hover:text-yellow-400 hover:border-b hover: border-yellow-400 sm:p-4  lg:text-1xl xl:text-2xl dark:text-gray-100"
                 >
                   {link.title}
                 </Link>

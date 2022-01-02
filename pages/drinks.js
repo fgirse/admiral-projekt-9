@@ -1,6 +1,8 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
+import StyledHeroDrinks from '../components/HeroDrinks';
 import { Heading1 } from '@/components/Headings/Heading1.styles'
+import Image from 'next/image';
 import  { useState, useEffect } from 'react';
 import { useTable } from 'react-table';
 import Ganter from '../components/icons/svg/SVGGanter'
@@ -26,31 +28,40 @@ export default function Drinks()  {
       
         return (
           <>
-          <div className="">
-            <Heading1>Drinks & Snacks</Heading1>
+
+
+          
+<StyledHeroDrinks>
+
+<div className="mt-">
+                        <Heading1 className='transform translate-y-24'>Drinks & Snacks</Heading1>
           </div>
-          
-                 <h1 className='text-red-800 text-center text-7xl'>Biere</h1>
 
-          <div className="mt-10 mx-auto w-11/12 h-96 grid grid-cols-4 grid-rows-2  text-gray-300 font-black text-7xl gap-10 justify-around items-center">
-          <div className="w-2/12 h-24 "><Ganter height={75} width={75} backgroundColour={'#ffffff'}></Ganter></div>
-            <div className="w-10/12 h-24  text-center text-5xl">Ganter-Bier</div>
-            <div className="w-10/12 h-24  text-center text-5xl">0.33 Liter</div>
-            <div className="w-10/12 h-24  text-right text-5xl">3.80 Eur</div>
+<h1 className='mt-20 text-red-800 text-center text-7xl'>Biere</h1>
 
-        <div className="w-2/12 h-24 "><Astra height={75} width={75} backgroundColour={'#ffffff'}></Astra></div>
-          <div className="w-10/12 h-24  text-center text-5xl">Astra-Bier</div>
-          <div className="w-10/12 h-24  text-center text-5xl">0.33 Liter</div>
-          <div className="w-10/12 h-24  text-right text-5xl">3.90 Eur</div>
+<div className="mt-10 mx-auto w-11/12 h-96 grid grid-cols-4 grid-rows-2  text-gray-300 font-black text-xs gap-10 justify-around items-center md:text-sm">
+<div className="w-2/12 h-24 "><Ganter height={75} width={75} backgroundColour={'#ffffff'}></Ganter></div>
+  <div className="w-10/12 h-24  text-xs text-center  g:text-5xl">Ganter-Bier</div>
+  <div className="w-10/12 h-24  text-xs text-center lg:text-5xl">0.33 Liter</div>
+  <div className="w-10/12 h-24  text-xs text-right lg:text-5xl">3.80 Eur</div>
 
+<div className="w-2/12 h-24 "><Astra height={75} width={75} backgroundColour={'#ffffff'}></Astra></div>
+<div className="w-10/12 h-24  text-xs text-center lg:text-5xl">Astra-Bier</div>
+<div className="w-10/12 h-24  text-xs text-center lg:text-5xl">0.33 Liter</div>
+<div className="w-10/12 h-24  text-xs text-right lg:text-5xl">3.90 Eur</div>
+
+
+<div className="w-2/12 h-24 "><Flensburger height={75} width={75} backgroundColour={'#ffffff'}></Flensburger></div>
+<div className="w-10/12 h-24  text-center text-5xl">Flensburger</div>
+<div className="w-10/12 h-24  text-center text-5xl">0.33 Liter</div>
+<div className="w-10/12 h-24  text-right text-5xl">4.20 Eur</div>     
+
+ 
+</div>
+
+</StyledHeroDrinks>
           
-        <div className="w-2/12 h-24 "><Flensburger height={75} width={75} backgroundColour={'#ffffff'}></Flensburger></div>
-          <div className="w-10/12 h-24  text-center text-5xl">Flensburger</div>
-          <div className="w-10/12 h-24  text-center text-5xl">0.33 Liter</div>
-          <div className="w-10/12 h-24  text-right text-5xl">4.20 Eur</div>     
-          
-           
-          </div>
+                 
              
           
           </>)}

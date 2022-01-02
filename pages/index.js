@@ -83,10 +83,10 @@ export default function Home() {
         <Image className='absolute' src="/Astraballons.png" alt="portrait" layout="responsive" height={473} width={473} />
       </div>
       <Heading1 className=''>Die Kneipe</Heading1>
-      <div className='w-2/12 absolute left-80 z-20 -transform -translate-y-16' >
+      <div className='w-2/12 absolute left-80 z-20 -transform -translate-y-0' >
         <Image src="/rettungsring.png" alt="portrait" layout="responsive" height={473} width={473} />
       </div>
-      <div className='absolute w-2/12 z-4 transform -translate-y-2' >
+      <div className='absolute w-2/12 z-4 transform -translate-y-0' >
         <Image src="/lighthousebw.svg" alt="portrait" layout="responsive" height={473} width={473} />
       </div>
 
@@ -245,7 +245,7 @@ export default function Home() {
 
           <Heading1 className="mt-16">Impressum</Heading1>
           <div>
-            <div className="flex flex-col items-center justify-between">
+            <div className="mt-12 flex flex-col items-center justify-between">
             <h1 className='mx-auto w-9/12 text-4xl text-yellow-400 text-center'>Rettungsanker Freiburg GbR</h1>
               <h1 className='mx-auto w-9/12 text-3xl text-gray-100 text-center'>Adelhauserstrasse 7c</h1>
               <h1 className='mx-auto w-9/12 text-3xl text-gray-100 text-center'>79098 Freiburg / Breisgau</h1>
