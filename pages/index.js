@@ -232,8 +232,7 @@ export default function Home() {
                 backgroundColor: "orange",
                 border: "3px white solid",
                 boxShadow: "10px 5px 10px rgba(244, 216, 154, 0.9)",
-              }} onGotPointerCapture={2}
-            >
+              }} onGotPointerCapture={2}        >
               <div className='border-8 border-gray-100'>
                 <Image src="/Impress03.jpg" alt="Impressionen" height="168 " width="300" layout="responsive" />
               </div>
@@ -244,11 +243,6 @@ export default function Home() {
           </div>
         </ThemeProvider>
 
-
-
-
-
-
       </section>
 
       <section>
@@ -257,7 +251,7 @@ export default function Home() {
           <Heading1 className="mt-16">Impressum</Heading1>
           <div>
             <div className="flex flex-col items-center justify-between">
-              <h1 className='mx-auto w-9/12 text-4xl text-gray-100 text-center'>Rettungsanker Freiburg GbR</h1>
+            <h1 className='mx-auto w-9/12 text-2xl text-gray-100 text-center'>Rettungsanker Freiburg GbR</h1>
               <h1 className='mx-auto w-9/12 text-4xl text-gray-100 text-center'>Adelhauserstrasse 7c</h1>
               <h1 className='mx-auto w-9/12 text-4xl text-gray-100 text-center'>79098 Freiburg / Breisgau</h1>
             </div>
@@ -294,7 +288,7 @@ export default function Home() {
 
 
   )
-  export async function getStaticProps() {
+   async function getStaticProps() {
     const posts = await getAllFilesFrontMatter('blog')
   
     return { props: { posts } }
