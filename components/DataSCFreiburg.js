@@ -29,8 +29,13 @@ const DataSCFreiburg = () => {
     const getData = async () => {
 
         const response = await axios( Url, { headers: { 'X-Auth-Token': Token } })
-        setTabelleBL(response.data.standings[0].table[5])
-        console.log(response.data.standings[0].table[5])
+        setTabelleBL(response.data.standings[0].table)
+        console.log(response.data.standings[0].table)
+
+        let developers = team.filter(member => member.position == "developer")
+
+console.log(developers)
+
     }
 
     
@@ -45,8 +50,6 @@ const DataSCFreiburg = () => {
             
             <div className="w-12/12 h-60 flex flex-row gap-x-5 justify-center items-center bg-white opacity-80">
                             <div className="w-96 p-3"><SVGSCFreiburgEmblem/></div>
-
-                            
                             <p className="text-4xl p-3 font-bold text-gray-700">Spiele: {tabelleBL.playedGames}</p>
                             <p className="text-4xl font-bold text-green-400">Siege: {tabelleBL.won}</p>
                             <p className="text-4xl font-bold text-gray-400">Tore: {tabelleBL.goalsFor}</p>
@@ -59,4 +62,3 @@ const DataSCFreiburg = () => {
     
 
 export default DataSCFreiburg
-                                                                                             

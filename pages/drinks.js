@@ -39,9 +39,9 @@ export default function Drinks()  {
 
 <h1 className='mt-20 text-red-800 text-center text-7xl'>Biere</h1>
 
-<div className="mt-10 mx-auto w-11/12 h-96 grid grid-cols-4 grid-rows-2  text-gray-300 font-black text-xs gap-10 justify-around items-center md:text-sm">
+<div className="mt-10 mx-auto w-11/12 h-full grid grid-cols-4 grid-rows-10 text-gray-300 font-black gap-10 justify-around items-center md:text-sm">
 <div className="w-2/12 h-24 "><Ganter height={75} width={75} backgroundColour={'#ffffff'}></Ganter></div>
-  <div className="w-10/12 h-24  text-xs text-center  g:text-5xl">Ganter-Bier</div>
+  <div className="w-10/12 h-24  text-xs text-center lg:text-5xl">Ganter-Bier</div>
   <div className="w-10/12 h-24  text-xs text-center lg:text-5xl">0.33 Liter</div>
   <div className="w-10/12 h-24  text-xs text-right lg:text-5xl">3.80 Eur</div>
 
@@ -52,9 +52,9 @@ export default function Drinks()  {
 
 
 <div className="w-2/12 h-24 "><Flensburger height={75} width={75} backgroundColour={'#ffffff'}></Flensburger></div>
-<div className="w-10/12 h-24  text-center text-5xl">Flensburger</div>
-<div className="w-10/12 h-24  text-center text-5xl">0.33 Liter</div>
-<div className="w-10/12 h-24  text-right text-5xl">4.20 Eur</div>     
+<div className="w-10/12 h-24  text-xs text-center text-5xl">Flensburger</div>
+<div className="w-10/12 h-24  text-xs text-center text-5xl">0.33 Liter</div>
+<div className="w-10/12 h-24  text-xs text-right text-5xl">4.20 Eur</div>     
 
  
 </div>

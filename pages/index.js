@@ -3,7 +3,7 @@ import { getAllFilesFrontMatter } from '@/lib/mdx';
 import Flensburger from '../components/icons/svg/SVGFlensburger';
 import Ganter from '../components/icons/svg/SVGGanter';
 import Astra from '../components/icons/svg/SVGAstra';
-import StyledHeroHome from '../components/HeroHome';
+import StyledHeroHome from "../components/HeroHome.js";
 import { Heading3 } from '../components/Headings/Heading3.styles';
 import { Heading1 } from '@/components/Headings/Heading1.styles';
 import Image from 'next/image';
@@ -44,6 +44,7 @@ const theme = {
 
 }
 export default function Home() {
+  
   return (
     <>
        <Heading3>Dein Treffpunkt<br/>in Freiburg !!!</Heading3>
